@@ -54,6 +54,16 @@ namespace Program{
 
             Array.Resize(ref times3, times3.Length + 10);
 
+
+            String[] times4 = new String[times3.Length];
+
+            Array.Copy(times3, times4, times3.Length);
+
+            foreach(String i in times4)
+            {
+                Console.WriteLine("Time copiado: " + i);
+            }
+
             Console.WriteLine("--------\n\nExibindo o tamanho do array após o redimensionamento--------");
             Console.WriteLine("Tamanho do array times3: " + times3.Length);
 
