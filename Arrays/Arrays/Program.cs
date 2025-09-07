@@ -50,6 +50,14 @@ namespace Program{
             {
                 Console.WriteLine("Time: " + times3[i]);
             }
+
+
+            Array.Resize(ref times3, times3.Length + 10);
+
+            Console.WriteLine("--------\n\nExibindo o tamanho do array após o redimensionamento--------");
+            Console.WriteLine("Tamanho do array times3: " + times3.Length);
+
+
         }
 
     }
